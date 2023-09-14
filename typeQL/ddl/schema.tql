@@ -1,0 +1,161 @@
+# Entities (Dynamic)
+
+type Person sub entity,
+    has id,
+    has firstName,
+    has lastName,
+    has gender,
+    has birthday,
+    has email,
+    has speaks,
+    has browserUsed,
+    has locationIP,
+    has language,
+    has imageFile;
+
+type Forum sub entity,
+    has id,
+    has title;
+
+type Message sub entity,
+    has id,
+    has browserUsed,
+    has locationIP,
+    has content,
+    has length;
+
+type Post sub Message,
+    has language,
+    has imageFile;
+
+type Comment sub Message;
+
+# Entities (Static)
+
+type Place sub entity,
+    abstract,
+    has id,
+    has name,
+    has url;
+
+type City sub Place;
+type Continent sub Place;
+type Country sub Place;
+
+type Organisation sub entity,
+    abstract,
+    has id,
+    has name,
+    has url;
+
+type Company sub Organisation;
+type University sub Organisation;
+
+type TagClass sub entity,
+    has id,
+    has name,
+    has url;
+
+type Tag sub TagClass;
+
+# Relationships
+
+type studyAt sub relation,
+    relates student,
+    relates institution,
+    has classYear;
+
+type workAt sub relation,
+    relates employee,
+    relates employer,
+    has workFrom;
+
+type hasTag sub relation,
+    relates taggedMessage,
+    relates tag;
+
+type isLocatedIn sub relation,
+    relates locatedEntity,
+    relates location;
+
+type hasInterest sub relation,
+    relates interestedPerson,
+    relates interest;
+
+type replyOf sub relation,
+    relates replyingComment,
+    relates originalMessage;
+
+type hasCreator sub relation,
+    relates createdMessage,
+    relates creator;
+
+type containerOf sub relation,
+    relates containingForum,
+    relates containedPost;
+
+type hasMember sub relation,
+    relates memberForum,
+    relates member,
+    has creationDate;
+
+type hasModerator sub relation,
+    relates moderatedForum,
+    relates moderator;
+
+type likes sub relation,
+    relates likingPerson,
+    relates likedMessage,
+    has creationDate;
+
+type knows sub relation,
+    relates known,
+    relates knower,
+    has creationDate;
+
+type isPartOf sub relation,
+    relates part,
+    relates whole;
+
+type isSubclassOf sub relation,
+    relates subclass,
+    relates superclass;
+
+type hasType sub relation,
+    relates typedMessage,
+    relates typeClass;
+
+# Role Definitions
+
+Person plays student,
+      plays employee,
+      plays interestedPerson,
+      plays creator,
+      plays member,
+      plays moderator,
+      plays likingPerson,
+      plays known,
+      plays knower;
+
+University plays institution;
+Company plays employer;
+Message plays taggedMessage,
+        plays locatedEntity,
+        plays createdMessage,
+        plays typedMessage;
+Post plays originalMessage,
+     plays containedPost;
+Comment plays replyingComment;
+Forum plays memberForum,
+      plays moderatedForum,
+      plays containingForum;
+Tag plays tag,
+     plays interest;
+Place plays location;
+City plays part;
+Country plays part,
+       plays whole;
+Continent plays whole;
+TagClass plays subclass,
+         plays superclass,
+         plays typeClass;
