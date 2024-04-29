@@ -21,7 +21,7 @@ Alternatively, a docker-compose specification is available to start the PostgreS
 docker-compose build && docker-compose up
 ```
 
-The default environment variables are loaded from `.env`. Change the `POSTGRES_CSV_DIR` to point to point to the data set, e.g.
+The default environment variables are loaded from `.env`. Change the `POSTGRES_CSV_DIR` to point to the data set, e.g.
 
 ```bash
 POSTGRES_CSV_DIR=`pwd`/social-network-sf0.003-bi-composite-merged-fk/
