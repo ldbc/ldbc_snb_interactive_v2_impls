@@ -1,5 +1,5 @@
 ![LDBC logo](ldbc-logo.png)
-# LDBC SNB Interactive workload implementations
+# LDBC SNB Interactive v2 workload implementations
 
 [![Build Status](https://circleci.com/gh/ldbc/ldbc_snb_interactive_v2_impls.svg?style=svg)](https://circleci.com/gh/ldbc/ldbc_snb_interactive_v2_impls)
 
@@ -7,7 +7,12 @@ This repository contains reference implementations of the LDBC Social Network Be
 
 To get started with the LDBC SNB benchmarks, check out our introductory presentation: [The LDBC Social Network Benchmark](https://docs.google.com/presentation/d/1NilxSrKQnFq4WzWMY2-OodZQ2TEksKzKBmgB20C_0Nw/) ([PDF](https://ldbcouncil.org/docs/presentations/ldbc-snb-2022-11.pdf)).
 
+The design and implementation of the SNB Interactive v2 workload are described in the [TPCTC 2023 paper, "The LDBC Social Network Benchmark Interactive Workload v2: A Transactional Graph Query Benchmark with Deep Delete Operations"](https://ldbcouncil.org/docs/papers/ldbc-snb-interactive-v2-tpctc2023-preprint.pdf) by Püroja et al.
+
 ## Notes
+
+:warning: Audited runs are currently only possible with the [SNB Interactive v1.x version](https://github.com/ldbc/ldbc_snb_interactive_impls/tree/v1-dev).
+The new version of Interactive (with deletes and larger SFs) will be released in 2024.
 
 :warning: Please keep in mind the following when using this repository.
 
@@ -132,6 +137,3 @@ Implementations of the Interactive workload can be audited by a certified LDBC a
 The [Auditing Policies chapter of the specification](https://ldbcouncil.org/ldbc_snb_docs/ldbc-snb-specification.pdf) describes the auditing process and the required artifacts.
 
 If you plan to get your system audited, please reach to the [LDBC Steering Committee](https://ldbcouncil.org/organizational-members/).
-
-:warning: Audited runs are currently only possible with the [v1.x version](https://github.com/ldbc/ldbc_snb_interactive_impls/tree/v1-dev).
-The new version of Interactive (with deletes and larger SFs) will be released in Q2 2023.
