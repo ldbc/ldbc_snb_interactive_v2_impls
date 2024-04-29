@@ -3,11 +3,10 @@
 
 [![Build Status](https://circleci.com/gh/ldbc/ldbc_snb_interactive_v2_impls.svg?style=svg)](https://circleci.com/gh/ldbc/ldbc_snb_interactive_v2_impls)
 
-This repository contains reference implementations of the LDBC Social Network Benchmark's Interactive workload. See details on the benchmark, see the [SIGMOD 2015 paper](https://homepages.cwi.nl/~boncz/snb-challenge/snb-sigmod.pdf), [specification on GitHub Pages](https://ldbcouncil.org/ldbc_snb_docs/), and [specification on arXiv](https://arxiv.org/pdf/2001.02299.pdf).
+This repository contains reference implementations of the LDBC Social Network Benchmark's Interactive v2 workload.
+The design and implementation of the workload are described in the [TPCTC 2023 paper, "The LDBC Social Network Benchmark Interactive Workload v2: A Transactional Graph Query Benchmark with Deep Delete Operations"](https://ldbcouncil.org/docs/papers/ldbc-snb-interactive-v2-tpctc2023-preprint.pdf) by Püroja et al.
 
 To get started with the LDBC SNB benchmarks, check out our introductory presentation: [The LDBC Social Network Benchmark](https://docs.google.com/presentation/d/1NilxSrKQnFq4WzWMY2-OodZQ2TEksKzKBmgB20C_0Nw/) ([PDF](https://ldbcouncil.org/docs/presentations/ldbc-snb-2022-11.pdf)).
-
-The design and implementation of the SNB Interactive v2 workload are described in the [TPCTC 2023 paper, "The LDBC Social Network Benchmark Interactive Workload v2: A Transactional Graph Query Benchmark with Deep Delete Operations"](https://ldbcouncil.org/docs/papers/ldbc-snb-interactive-v2-tpctc2023-preprint.pdf) by Püroja et al.
 
 ## Notes
 
