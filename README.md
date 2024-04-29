@@ -22,10 +22,11 @@ The new version of Interactive (with deletes and larger SFs) will be released in
 
 ## Implementations
 
-We provide two reference implementations:
+We provide three reference implementations:
 
 * [Neo4j (Cypher) implementation](cypher/README.md)
 * [PostgreSQL (SQL) implementation](postgres/README.md)
+* [DuckDB (SQL) implementation](duckdb/README.md)
 
 Additional implementations:
 
