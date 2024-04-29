@@ -131,9 +131,9 @@ The implementation process looks roughly as follows:
 1. Test the implementation against the reference implementations using various scale factors.
 1. Optimize the implementation.
 
-## Preparing for an audited run
+## Audited runs
 
-Implementations of the Interactive workload can be audited by a certified LDBC auditor.
+Implementations of the Interactive workload can be [audited](https://ldbcouncil.org/benchmarks/snb-interactive/) by a certified LDBC auditor.
 The [Auditing Policies chapter of the specification](https://ldbcouncil.org/ldbc_snb_docs/ldbc-snb-specification.pdf) describes the auditing process and the required artifacts.
 
-If you plan to get your system audited, please reach to the [LDBC Steering Committee](https://ldbcouncil.org/organizational-members/).
+If you plan to get your system audited, please reach out to the [LDBC Board of Directors](https://ldbcouncil.org/leadership/).
