@@ -68,7 +68,7 @@ export USE_DATAGEN_DOCKER=true
 scripts/generate-all.sh
 ```
 
-### Pre-generate data sets
+### Pre-generated data sets
 
 [Pre-generated SF1-SF300 data sets](snb-interactive-pre-generated-data-sets.md) are available.
 
