@@ -54,7 +54,7 @@ postgres/scripts/build.sh
 
 The benchmark framework relies on the following inputs produced by the [SNB Datagen's new (Spark) version](https://github.com/ldbc/ldbc_snb_datagen_spark/).
 
-Currently, the initial data set, update streams, and parameters can generated with the following command:
+Currently, the initial data set, update streams, and parameters can be generated with the following command:
 
 ```bash
 export SF= #The scale factor to generate
