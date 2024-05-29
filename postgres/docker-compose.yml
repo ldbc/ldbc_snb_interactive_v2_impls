@@ -21,7 +21,7 @@ services:
         source: ${POSTGRES_SCRIPTS_DIR}/create-postgresdb.sh
         target: /docker-entrypoint-initdb.d/init-user-db.sh
     environment:
-      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_DATABASE=${POSTGRES_DATABASE}
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DOCKER_PLATFORM_FLAG=${POSTGRES_DOCKER_PLATFORM_FLAG}
@@ -51,7 +51,7 @@ services:
     command: sh -c "/wait && python3 -u home/load.py --POSTGRES_CSV_DIR ${POSTGRES_CSV_DIR} --is_container True"
     environment:
       - POSTGRES_HOST=postgres-db
-      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_DATABASE=${POSTGRES_DATABASE}
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_PORT=${POSTGRES_PORT}
