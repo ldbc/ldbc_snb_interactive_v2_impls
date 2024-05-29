@@ -10,7 +10,7 @@ import psycopg
 class PostgresDbLoader():
 
     def __init__(self):
-        self.database = os.environ.get("POSTGRES_DB", "ldbcsnb")
+        self.database = os.environ.get("POSTGRES_DATABASE", "ldbcsnb")
         self.endpoint = os.environ.get("POSTGRES_HOST", "localhost")
         self.port = int(os.environ.get("POSTGRES_PORT", 5432))
         self.user = os.environ.get("POSTGRES_USER", "postgres")
