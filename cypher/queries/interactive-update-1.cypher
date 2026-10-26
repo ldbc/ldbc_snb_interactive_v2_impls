@@ -8,7 +8,7 @@ CREATE (p:Person {
     creationDate: $creationDate,
     locationIP: $locationIP,
     browserUsed: $browserUsed,
-    languages: $languages,
+    speaks: $languages,
     email: $emails
   })-[:IS_LOCATED_IN]->(c)
 WITH p, count(*) AS dummy1
@@ -22,4 +22,4 @@ UNWIND $studyAt AS s
 WITH p, count(*) AS dummy3
 UNWIND $workAt AS w
   MATCH (comp:Company {id: w[0]})
-  CREATE (p)-[:WORKS_AT {workFrom: w[1]}]->(comp)
+  CREATE (p)-[:WORK_AT {workFrom: w[1]}]->(comp)
